@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Magic Link登录</title>
+</head>
+
+<body style="margin: 0; padding: 20px; background-color: #f4f4f4; font-family: Arial, sans-serif;">
+    <div style="max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 5px;">
+        <h2 style="color: #2c3e50;">登录BlkSails</h2>
+        <p>您好！</p>
+        <p>请点击下面的按钮登录您的BlkSails账号：</p>
+        <p style="text-align: center;">
+            <a href="{{ .MagicLinkURL }}"
+                style="display: inline-block; padding: 12px 24px; background-color: #3498db; color: white; text-decoration: none; border-radius: 4px;">一键登录</a>
+        </p>
+        <p>或者，您可以复制以下链接到浏览器中访问：</p>
+        <p>{{ .MagicLinkURL }}</p>
+        <p>此链接将在10分钟后失效。如果您没有请求登录，请忽略此邮件。</p>
+        <p>此致</p>
+        <p>BlkSails团队</p>
+    </div>
+</body>
+
+</html>
