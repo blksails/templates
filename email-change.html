@@ -12,11 +12,12 @@
         <p>您好！</p>
         <p>我们收到了更改您BlkSails账号邮箱地址的请求。请点击下面的按钮确认更改：</p>
         <p style="text-align: center;">
-            <a href="{{ .EmailChangeURL }}"
+            <a href="http://blksails.net:8000/auth/v1/verify?token={{ .TokenHash }}&type=email-change&redirect_to={{ .SiteURL }}"
                 style="display: inline-block; padding: 12px 24px; background-color: #3498db; color: white; text-decoration: none; border-radius: 4px;">确认更改</a>
         </p>
         <p>或者，您可以复制以下链接到浏览器中访问：</p>
-        <p>{{ .EmailChangeURL }}</p>
+        <p>http://blksails.net:8000/auth/v1/verify?token={{ .TokenHash }}&type=email-change&redirect_to={{ .SiteURL }}
+        </p>
         <p>如果您没有请求更改邮箱地址，请忽略此邮件。</p>
         <p>此致</p>
         <p>BlkSails团队</p>

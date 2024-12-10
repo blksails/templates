@@ -12,11 +12,11 @@
         <p>您好！</p>
         <p>您收到此邮件是因为有人邀请您加入BlkSails。请点击下面的按钮接受邀请：</p>
         <p style="text-align: center;">
-            <a href="{{ .InviteURL }}"
+            <a href="http://blksails.net:8000/auth/v1/verify?token={{ .TokenHash }}&type=invite&redirect_to={{ .SiteURL }}"
                 style="display: inline-block; padding: 12px 24px; background-color: #3498db; color: white; text-decoration: none; border-radius: 4px;">接受邀请</a>
         </p>
         <p>或者，您可以复制以下链接到浏览器中访问：</p>
-        <p>{{ .InviteURL }}</p>
+        <p>http://blksails.net:8000/auth/v1/verify?token={{ .TokenHash }}&type=invite&redirect_to={{ .SiteURL }}</p>
         <p>此邀请链接将在24小时后失效。如果您对此邀请有任何疑问，请联系邀请人。</p>
         <p>此致</p>
         <p>BlkSails团队</p>
